@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        text-align: center;
+        }
+        main{
+            position: relative;
+            top: 15rem;
+        }
+        .num{
+            font-size: 3rem;
+        }
+        input{
+            text-align: center;
+            border: none;
+            font-size: 3rem;
+            outline:none;
+        }
+        button{
+            font-size: 0.8rem;
+        }
+       
+</style>
+
+<body>
+    <main>
+        <h3>Counter</h3>
+        <!-- <div class="num">0</div> -->
+        <input type="text" value="0" readonly class="num"> <br><br>
+        <button class="dec">decrease</button>
+        <button class="reset">reset</button>
+        <button class="inc">increase</button>
+    </main>
+
+    <script>
+        let increaseBtn=document.querySelector(".inc");
+        let decreaseBtn=document.querySelector(".dec");
+        let getNum=document.querySelector(".num");
+        let resetBtn=document.querySelector(".reset");
+
+        increaseBtn.addEventListener("click",()=>{
+            getNum.value++;
+        })
+        decreaseBtn.addEventListener("click",()=>{
+            getNum.value--;
+        });
+        resetBtn.addEventListener("click",()=>{
+            getNum.value=0;
+        })
+    </script>
+</body>
+
+</html>

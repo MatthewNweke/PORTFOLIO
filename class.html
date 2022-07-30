@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+
+
+
+    <script>
+        let fakeNum="345s";
+        const checkFakeNum=isFinite(fakeNum);
+        console.log(checkFakeNum);
+        // isFinite() converts its arguement to a number and returns true if it is a regular number 
+        // while isNaN() converts its arguement to a number and then test for being NaN
+        let checkForNaN=Object.is(NaN,NaN);
+        console.log(checkForNaN);
+        console.log(Object.is(34,"34"));
+        console.log(Object.is(34,34));
+        console.log(Object.is(50,34));
+        
+        const myObj={
+            firstName:"solo",
+            lastName:"baba"
+        }
+
+
+        // to copy an object into another object without altering the previous one use Object.assign()
+        const secondObj=Object.assign({},myObj);
+        console.log(secondObj);
+        secondObj.score=300;
+        console.log(myObj);
+        // parseInt(integer) and parseFloat(decimals) are used for numeric conversion,its function is 
+        // similar to plus operator but the only exception is that the spaces beginning and ending
+        // a plus or Number method are ignored
+        let printMax=Number.MAX_VALUE;
+        console.log(printMax);
+        let printMin=Number.MIN_VALUE;
+        console.log(printMin);
+        let printInfinity=Number.POSITIVE_INFINITY;
+        console.log(printInfinity);
+        
+     </script>
+</body>
+</html>
