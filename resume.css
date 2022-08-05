@@ -1,67 +1,88 @@
-body{
+body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-*,*::after,*::before{
+
+*, *::after, *::before {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-html{
+
+html {
     box-sizing: border-box;
 }
-.name{
+
+.name {
     font-size: 3.3rem;
     font-weight: 400;
 }
-.role{
+
+.role {
     font-weight: 700;
     margin-left: 0.3rem;
 }
-main{
+
+main {
     margin: 2rem;
 }
-.myGmail{
+
+.myGmail {
     text-decoration: none;
     color: blue;
-    margin-left:0.3rem;
+    margin-left: 0.3rem;
 }
-.portfolio-mail{
+
+.portfolio-mail {
     margin-top: 1.3rem;
     display: flex;
     gap: 5%;
 }
-.top-row{
+
+.top-row {
     display: flex;
 }
-.sec-job,.first-job{
+
+.sec-job, .first-job {
     margin-top: 1.5rem;
 }
-.my-experiences,.my-education,.my-projects{
+
+.my-experiences, .my-education, .my-projects {
     font-size: 1.8rem;
     font-weight: 500;
 }
-.experience,.education,.projects{
+
+.experience, .education, .projects {
     margin-top: 2rem;
 }
-.experience a{
+
+.experience a {
     color: blue;
     text-decoration: none;
 }
-.my-education{
+
+.my-education {
     margin-bottom: 1rem;
 }
-h5{
+
+h5 {
     font-size: 1rem;
     font-weight: 700;
 }
-.projects h5{
+
+.projects h5 {
     margin-top: 2rem;
     margin-left: 0;
 }
-h6{
+
+h6 {
     font-size: 0.8rem;
 }
-p,span{
-    color: rgba(0, 0, 0,0.6);
+
+p, span, .pmatt a {
+    color: rgba(0, 0, 0, 0.5);
     font-weight: 500;
+}
+
+span a {
+    text-decoration: none;
 }
