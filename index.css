@@ -37,7 +37,7 @@ header {
     background-repeat: no-repeat;
     position: absolute;
     overflow: hidden;
-    transition: all 1s 0.1s cubic-bezier(.165, .84, .44, 1);
+    transition: all 1s .1s cubic-bezier(.165, .84, .44, 1);
     visibility: hidden;
     transform: translate(-100%);
     z-index: 100;
@@ -65,10 +65,27 @@ header {
 
 .about-text p {
     color: #f1f1f1;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     z-index: 2;
     letter-spacing: 2px;
+    animation: move-text 2s .1s;
+    /* background-color: blue; */
+}
 
+@keyframes move-text {
+    0% {
+        opacity: 0;
+        transform: translateX(-10rem);
+    }
+
+    80% {
+        transform: translateX(2rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
 }
 
 .overlay-details {
@@ -94,8 +111,8 @@ header {
 }
 
 .overlay-details li a:hover {
-    color: #cac8c8;
-    transition: all 0.3s 0s ease;
+    color: #bbbbbb;
+    transition: all .3s 0s ease;
 }
 
 .overlay-details li {
@@ -103,8 +120,8 @@ header {
 }
 
 #img-1 {
-    width: 12vw;
-    height: 12vw;
+    width: 15vw;
+    height: 15vw;
     border-radius: 50%;
     position: relative;
     left: 50%;
