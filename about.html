@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="about.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -15,8 +15,17 @@
 </head>
 
 <body>
-    <section class="main-content">
-        <div class="toggle-container"><span class="toggle">&#9776;</span></div>
+    <main>
+        <span class="toggle">&#9776;</span>
+
+        <section class="about-me">
+            <img src="mattPics.jpg" alt="my-img" id="img-1">
+            <div class="about-text">
+                <p> Hello,my name is <span class="name"><strong>Nweke Matthew.</strong></span> I am a <br>
+                    Front-end web developer
+                </p>
+            </div>
+        </section>
         <section class="nav-overlay">
             <div class="imgcontainer">
                 <span class="exitBtn">&#x2715;</span>
@@ -28,24 +37,7 @@
                 </ul>
             </div>
         </section>
-
-
-        <section class="projects-section">
-            <h1 class="heading-primary ">Older Side Projects</h1>
-            <div class="pmatt-info-container">
-                <div class="pmatt-img"></div>
-                <div class="aboutpmatt">
-                    <p>Pmatt is a user interface application that allows you <br> to code
-                        online, and collaborate with other developers <br> accross the world.
-                        I built Pmatt when I just started <br> learning Javascript after learning Html and Css. <br>
-                        You can check out the website by clicking the link <br>
-                    </p>
-                    <a href="#" class="pmatt-link">pmatt.com</a>
-                </div>
-            </div>
-
-        </section>
-    </section>
+    </main>
 
     <script src="index.js"></script>
 </body>

@@ -1,0 +1,155 @@
+body {
+    background: linear-gradient(to right bottom, rgb(23, 4, 26), rgba(23, 4, 26, 0.9));
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    /* position: relative; */
+    max-width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+.about-me {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.name {
+    color: #ff5a00
+}
+
+.toggle, .exitBtn {
+    color: white;
+    font-size: 2rem;
+    position: absolute;
+    right: 0;
+    margin: 1rem;
+    cursor: pointer;
+}
+
+.about-text p {
+    color: #f1f1f1;
+    font-size: 1.2rem;
+    z-index: 2;
+    letter-spacing: 2px;
+    animation: move-text 2s .1s;
+    animation: move-text 2s .1s;
+    line-height: 1.5;
+    font-weight: 100;
+    letter-spacing: 2px;
+    /* background-color: blue; */
+}
+
+@keyframes move-text {
+    0% {
+        opacity: 0;
+        transform: translateX(-10rem);
+    }
+
+    80% {
+        transform: translateX(2rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+#img-1 {
+    width: 15vw;
+    height: 15vw;
+    border-radius: 50%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.nav-overlay {
+    width: 0;
+    height: 100%;
+    background-image: url("kc.jpg");
+    background-repeat: no-repeat;
+    position: absolute;
+    overflow: hidden;
+    transition: all 1s .1s cubic-bezier(.165, .84, .44, 1);
+    visibility: hidden;
+    transform: translate(-100%);
+    z-index: 100;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.show-links {
+    width: 100%;
+    visibility: visible;
+    transform: translate(0);
+    height: 100vh;
+}
+
+.overlay-details {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%);
+    list-style-type: none;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.overlay-details li a {
+    text-decoration: none;
+    font-size: 1.8rem;
+    color: white;
+    font-weight: 400;
+    display: block;
+    text-align: center;
+    padding: 0.5rem;
+    /* margin: 0; */
+}
+
+.overlay-details li a:hover {
+    color: #bbbbbb;
+    transition: all .3s 0s ease;
+}
+
+.overlay-details li {
+    margin: 1.5rem;
+}
+
+#img-1 {
+    width: 17vw;
+    height: 18vw;
+    border-radius: 50%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+.imgcontainer {
+    background-color: rgba(0, 0, 0, 0.65);
+    height: 100vh;
+    overflow: hidden;
+}
+
+
+@media (max-width:648px) {
+    #img-1 {
+        width: 25vw;
+        height: 25vw;
+    }
+}
+
+@media (max-width:420px) {
+    #img-1 {
+        width: 30vw;
+        height: 30vw;
+    }
+}
