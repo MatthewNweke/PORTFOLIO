@@ -101,10 +101,10 @@ h1 {
 
 .nav-overlay {
     width: 0;
-    height: 100vh;
+    min-height: 100vh;
     background-image: url("kc.jpg");
     background-repeat: no-repeat;
-    position: absolute;
+    position: fixed;
     overflow: hidden;
     transition: all 1s .1s cubic-bezier(.165, .84, .44, 1);
     visibility: hidden;
@@ -312,7 +312,7 @@ h1 {
         border: 1px solid #f1f1f1;
         padding: 0.5rem;
         border-radius: 0.8rem;
-        font-size: 2.4rem;
+        /* font-size: 2.rem; */
         margin: 1.3rem;
     }
 
@@ -360,7 +360,7 @@ h1 {
         position: fixed;
         z-index: 100;
         background: linear-gradient(to right bottom, rgb(23, 4, 26), rgb(23, 4, 26));
-        height: 15vh;
+        height: 12vh;
         border: none;
         border: 1px solid transparent;
     }
@@ -376,9 +376,6 @@ h1 {
 }
 
 @media (max-width:345px) {
-    .heading-primary, .heading-primary:after {
-        /* text-align: left; */
-    }
 
     .pmatt-img {
         padding: 8rem 10rem 8rem 6rem;
