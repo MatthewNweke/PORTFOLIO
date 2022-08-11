@@ -11,6 +11,10 @@ body {
     font-family: 'Inter', sans-serif;
 }
 
+html {
+    overflow-x: hidden;
+}
+
 .about-me {
     position: absolute;
     left: 50%;
@@ -42,6 +46,7 @@ body {
     line-height: 1.5;
     font-weight: 100;
     letter-spacing: 2px;
+    text-align: center;
     /* background-color: blue; */
 }
 
@@ -139,11 +144,29 @@ body {
     overflow: hidden;
 }
 
+@media (max-width:829px) {
+    .about-text p {
+        font-size: 1rem;
+        letter-spacing: 0;
+    }
+}
 
 @media (max-width:648px) {
     #img-1 {
         width: 25vw;
         height: 25vw;
+    }
+
+    .about-text p {
+        line-height: 1.2;
+        /* font-size: 0.8rem; */
+    }
+}
+
+@media (max-width:448px) {
+    .about-text p {
+        font-size: 0.9rem;
+        line-height: 1.4;
     }
 }
 
@@ -155,9 +178,16 @@ body {
 
     .toggle, .exitBtn {
         border: 1px solid #f1f1f1;
-        padding: 1rem;
+        padding: 0.5rem;
         border-radius: 0.8rem;
         font-size: 2.4rem;
         margin: 1.3rem;
+    }
+
+}
+
+@media (max-width:340px) {
+    .about-text p {
+        line-height: 1.6;
     }
 }
