@@ -6,7 +6,6 @@ body {
 
 html {
     box-sizing: border-box;
-    overflow-x: hidden;
 
 }
 
@@ -20,7 +19,7 @@ h1 {
 }
 
 .main-content {
-    max-width: 100vw;
+    width: 100vw;
     height: 100vh;
     background: linear-gradient(to right bottom, rgb(23, 4, 26), rgba(23, 4, 26, 0.9));
     background-size: cover;
@@ -176,12 +175,12 @@ h1 {
     background-position: 50%;
     padding: 13rem;
     width: 35vw;
-    margin: auto;
+    margin: 1rem;
     margin-bottom: 2rem;
     box-shadow: 0 2rem 4rem rgb(0 0 0 / 15%);
     border-radius: 4px;
     position: relative;
-    overflow: hidden;
+    /* overflow: hidden; */
     height: 35vh;
 }
 
@@ -191,6 +190,7 @@ h1 {
     font-family: 'Inter', sans-serif;
     font-weight: 300;
     /* height: 100vh; */
+    width: 100vw;
     background: linear-gradient(to right bottom, rgb(23, 4, 26), rgb(23, 4, 26));
 }
 
@@ -217,7 +217,7 @@ h1 {
     font-weight: 200;
 }
 
-.heading-primary:after {
+.heading-primary::after {
     display: block;
     height: 2px;
     background-color: #ff5a00;
@@ -243,8 +243,21 @@ h1 {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(8, 1fr);
-        justify-content: center;
+        place-items: center;
+        /* justify-content: center;
+        align-items: center; */
+    }
+
+    /* .aboutpmatt p {
+        text-align: center;
+        background-color: red;
+    } */
+    .aboutpmatt {
+        display: flex;
         align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin: 0;
     }
 }
 
@@ -264,6 +277,30 @@ h1 {
 
 }
 
+@media (max-width:520px) {
+    .pmatt-img {
+        padding: 11rem;
+    }
+
+    .aboutpmatt p {
+        font-size: 0.9rem;
+    }
+
+    .pmatt-info-container {
+        padding-left: 2rem;
+        padding-right: 2rem;
+        font-size: 1rem;
+        line-height: 1.8;
+        letter-spacing: 1px;
+    }
+}
+
+@media (max-width:459px) {
+    .pmatt-info-container {
+        line-height: 1.4;
+    }
+}
+
 @media (max-width:420px) {
     #img-1 {
         width: 30vw;
@@ -272,11 +309,17 @@ h1 {
 
     .toggle, .exitBtn {
         border: 1px solid #f1f1f1;
-        padding: 1rem;
+        padding: 0.5rem;
         border-radius: 0.8rem;
         font-size: 2.4rem;
         margin: 1.3rem;
     }
+
+    .toggle {
+        z-index: 100;
+        margin-right: 2rem;
+    }
+
 
     .heading-primary {
         font-size: 1.5rem;
@@ -302,9 +345,10 @@ h1 {
 
     .pmatt-link {
         position: absolute;
-        bottom: 18rem;
-        right: 10%;
+        bottom: 13rem;
+        /* right: 5%; */
     }
+
 
     .projects-section {
         padding-top: 10rem;
@@ -312,18 +356,36 @@ h1 {
 
     .toggle-container {
         width: 100%;
-        margin: 0;
         position: fixed;
-        inset: 0 0 auto;
         z-index: 100;
         background: linear-gradient(to right bottom, rgb(23, 4, 26), rgb(23, 4, 26));
         height: 15vh;
+        border: none;
+        border: 1px solid transparent;
     }
 
+    /* .pmatt-info-container {
+        margin-right: 2rem;
+    } */
+    .pmatt-img {
+        padding: 10rem 10rem 10rem 8rem;
+        width: 100vw;
+    }
 
-    @media (max-width:345px) {
-        .heading-primary, .heading-primary:after {
-            text-align: left;
-        }
+}
+
+@media (max-width:345px) {
+    .heading-primary, .heading-primary:after {
+        /* text-align: left; */
+    }
+
+    .pmatt-img {
+        padding: 8rem 10rem 8rem 6rem;
+        width: 100vw;
+        margin: 5rem;
+    }
+
+    .pmatt-link {
+        bottom: 11rem;
     }
 }
