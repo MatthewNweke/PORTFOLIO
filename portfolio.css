@@ -58,7 +58,7 @@ h1 {
 }
 
 .toggle-container {
-    position: relative;
+    position: fixed;
 }
 
 .about-text p {
@@ -105,7 +105,7 @@ h1 {
     background-image: url("kc.jpg");
     background-repeat: no-repeat;
     position: fixed;
-    overflow: hidden;
+    overflow: hidden !important;
     transition: all 1s .1s cubic-bezier(.165, .84, .44, 1);
     visibility: hidden;
     transform: translate(-100%);
@@ -167,6 +167,7 @@ h1 {
 .imgcontainer {
     background-color: rgba(0, 0, 0, 0.65);
     height: 100vh;
+    overflow: hidden !important;
     /* overflow: inheri; */
 }
 
@@ -181,7 +182,7 @@ h1 {
     box-shadow: 0 2rem 4rem rgb(0 0 0 / 15%);
     border-radius: 4px;
     position: relative;
-    /* overflow: hidden; */
+    overflow: hidden;
     height: 35vh;
 }
 
@@ -310,10 +311,10 @@ h1 {
 
     .toggle, .exitBtn {
         border: 1px solid #f1f1f1;
-        padding: 0.5rem;
         border-radius: 0.8rem;
-        /* font-size: 2.rem; */
+        font-size: 1.2rem;
         margin: 1.3rem;
+        padding: 0.5rem;
     }
 
     .toggle {
@@ -360,7 +361,7 @@ h1 {
         position: fixed;
         z-index: 100;
         background: linear-gradient(to right bottom, rgb(23, 4, 26), rgb(23, 4, 26));
-        height: 12vh;
+        height: 10vh;
         border: none;
         border: 1px solid transparent;
     }
