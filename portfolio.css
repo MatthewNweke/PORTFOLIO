@@ -6,7 +6,7 @@ body {
 
 html {
     box-sizing: border-box;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 
 }
 
@@ -167,7 +167,7 @@ h1 {
 .imgcontainer {
     background-color: rgba(0, 0, 0, 0.65);
     height: 100vh;
-    overflow: inherit;
+    /* overflow: inheri; */
 }
 
 .pmatt-img {
