@@ -161,6 +161,10 @@ html {
         line-height: 1.2;
         /* font-size: 0.8rem; */
     }
+
+    .toggle, .exitBtn {
+        font-size: 1.6rem;
+    }
 }
 
 @media (max-width:448px) {
@@ -177,10 +181,10 @@ html {
     }
 
     .toggle, .exitBtn {
-        border: 1px solid #f1f1f1;
-        padding: 0.5rem;
+        /* border: 1px solid #f1f1f1; */
+        padding: 0.4rem;
         border-radius: 0.8rem;
-        /* font-size: 2.4rem; */
+        font-size: 1.4rem;
         margin: 1.3rem;
     }
 
